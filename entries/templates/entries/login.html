@@ -1,0 +1,45 @@
+
+{% extends 'entries/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'login.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<div class="login-box">
+    
+    <div class="back-link">
+        <a href="/landing">back</a>
+        
+    </div>
+
+
+
+
+<form action="" method="POST" class="form-wrap">
+    {% csrf_token %}
+    <h2>Log In</h2>
+<label for="">Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+   <br>
+
+
+   <label for="">Password</label>
+   <input type="password" id="pass1" name="pass1" placeholder="Enter Password" required>
+   <br>
+
+
+
+
+  <div  class="button">
+     <input type="submit">
+  </div>
+
+
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,132 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+  
+  color: lightcoral;
+}
+
+body{background: rgba(175, 238, 238, 0.3);}
+
+
+.back-link{
+    font-size: 12px;
+    margin-bottom:60%;
+    padding-right: 5%;
+    color: #5e5f62;
+    text-decoration: none;
+}
+
+
+.sign-box{
+
+    display: flex;
+    width: 600px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(175, 238, 238, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 15%;
+
+    
+     
+}
+
+
+.sign-box .form-container h2{
+    text-align: center;
+    font-size: 50px; 
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+ 
+
+    .sign-box .form-container input[type="text"]{
+        padding: 5px 8px;
+        border: 1px ;
+        width: 303px;
+        height: 37px;
+        background: #ECEFEF;
+        box-shadow: 0px 2px 2px rgba(68, 68, 68, 0.25);
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+    
+    .sign-box .form-container input[type="password"]{
+        padding: 5px 8px;
+        border: 1px ;
+        width: 303px;
+        height: 37px;
+        background: #ECEFEF;
+        box-shadow: 0px 2px 2px rgba(68, 68, 68, 0.25);
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+
+    .sign-box .form-container input[type="email"]{
+        padding: 5px 8px;
+        border: 1px ;
+        width: 303px;
+        height: 37px;
+        background: #ECEFEF;
+        box-shadow: 0px 2px 2px rgba(68, 68, 68, 0.25);
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+
+    .sign-box .form-container .bttn {
+        display: flex;
+        justify-content: center;
+        width: 303px;
+        margin-left: 50px;
+    }
+
+
+
+    .sign-box .form-container .bttn input[type="submit"]{
+        padding: 4px 10px;
+        border: none;
+        border-radius: 7px;
+        background: lightcoral;
+        color:#ffffff;
+        font-weight: 100;
+        cursor: pointer;
+        font-size: 16px;
+        width: 303px;
+        height: 37px;
+        margin-top: 10px;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+    text-align: center;
+  }
+

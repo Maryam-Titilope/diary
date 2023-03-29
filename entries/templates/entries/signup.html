@@ -1,0 +1,52 @@
+{% extends 'entries/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'signup.css' %}">
+{% endblock %}
+
+
+    {% block content %}
+
+    <div class="sign-box">
+    
+        <div class="back-link">
+            <a href="/landing">back</a>
+            
+        </div>
+
+   <form action="" method="post" class="form-container">
+    {% csrf_token %}
+    <h2>Sign up</h2>
+
+    <label for="">Username</label>
+    <input type="text" id="username" name="username" placeholder="create a username" required>
+   <br>
+
+    <label for="">Firstname</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Enter Firstname" required>
+<br>
+
+    <label for="">Lastname</label>
+    <input type="text" id="lastname" name="lastname" placeholder="enter lastname" required>
+    <br>
+
+    <label for="">Email</label>
+    <input type="email" id="email" name="email" placeholder="enter email" required>
+<br>
+    <label for="">Password</label>
+    <input type="password" id="pass1" name="pass1" placeholder="create a password" required>
+    
+    <br>
+
+    <label for="">confirm password</label>
+    <input type="password" id="pass2" name="pass2" placeholder="confirm password" required>
+
+    <div  class="bttn">
+        <input type="submit">
+     </div>
+
+</form>
+
+{% endblock %}
+
+

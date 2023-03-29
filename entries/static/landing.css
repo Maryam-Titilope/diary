@@ -1,0 +1,60 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+  
+  
+  color: lightcoral;
+  
+ 
+}
+
+body{background: rgba(175, 238, 238, 0.3);}
+
+
+
+h2{
+    font-size: 50px;
+  }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  
+}
+ .btn {
+  display: flex;
+    justify-content: center;
+    width: 303px;
+    margin-left: 50px;
+  
+}
+
+ .btn input[type="submit"]{
+  padding: 4px 10px;
+  border: none;
+  border-radius: 7px;
+  background: lightcoral;
+  color:#ffffff;
+  font-weight: 100;
+  cursor: pointer;
+  font-size: 16px;
+  width: 303px;
+  height: 37px;
+  margin-top: 10px;
+
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ 
+  text-align: center;
+}

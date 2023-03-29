@@ -1,0 +1,34 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+  
+  
+  color: lightcoral;
+  
+ 
+}
+
+body{background: rgba(175, 238, 238, 0.3);}
+
+
+
+.navbar{
+    background-color: white; /* Set background color for navbar */
+    overflow: hidden; 
+}
+
+
+
+
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+    text-align: center;
+  }
