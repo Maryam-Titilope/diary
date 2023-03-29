@@ -35,7 +35,7 @@ class EntryUpdateView(SuccessMessageMixin,UpdateView):
     def get_success_url(self):
         return reverse_lazy(
             "entry-detail",
-            kwargs={"pk": self.entry.id}
+            kwargs={"pk": self.object.pk}
         )
 
 class EntryDeleteView(DeleteView):
@@ -96,12 +96,13 @@ def signup(request):
     myuser.last_name = lastname
     myuser.save()
     messages.success (request, "Your account has been sucessfully created.")
-    return redirect('app')
+    return redirect('list')
  
  return render(request,'entries/signup.html')
 
 
-
+def list(request):
+   return render(request, 'entries/entry_list.html')
 
 
 

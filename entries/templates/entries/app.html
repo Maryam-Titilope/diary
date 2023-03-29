@@ -31,7 +31,7 @@
           
           <li class="nav-item">
             <a class="nav-link" href="{% url 'landing' %}">Logout</a>
-            
+            <a class="nav-link" href="{% url 'entry_list' %}">list</a>
           </li>
           
       </ul>
@@ -39,17 +39,7 @@
   </div>
 </nav>
 
-{% if request.user.is_authenticated %}
-      
-      <h1 class="loader">Write your day :)</h1>
-    {% else %}
-      <h1 class="loader">Edit your day!</h1>         
-      {% endif %}
-      <form method="POST">
-      {% csrf_token %}
-      
-      <input type="submit" class="btn btn-success" value="Submit">
-    </form>
+
           
    
 
